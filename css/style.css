@@ -50,6 +50,7 @@ button {border: none;}
 .slider .item img {
     width: 100vw;
     height: calc(50vh - 50px);
+    margin-top: 50px;
 }
 .slider .slick-dots {
     display: flex;
@@ -82,7 +83,7 @@ button {border: none;}
     background: #000;
 }
 .slick-prev, .slick-next {
-    top: calc(50vh - 50px);
+    top: calc(50vh);
     position: absolute;
     width: 50px;
     height: 50px;
@@ -128,7 +129,7 @@ button[type='button']{
     }
 
     .slick-prev, .slick-next {
-        top: calc(100vh - 50px);
+        top: calc(100vh);
     }
 }
 /*---------------------------------------------------------MENU---------------------------------------------------*/
@@ -236,7 +237,6 @@ section, .about {
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
 /*------------------------------------------------------------new-bruhed--------------------------------------------*/
 .items .border-left {
     border-left: .3rem solid #b95356;
@@ -304,14 +304,13 @@ section div.box-mini {
 }
 .link-item:hover {
     cursor:pointer;
-    color: #fff;
+    color: #b95356;
 }
 .link-item.active {
     color: #b95356;
 }
-.box-mini i {
-    font: italic 1.6rem 'Titillium Web';
-}
+.box-mini i {font: italic 1.4rem 'Titillium Web';}
+p.twit {font:600 1.8rem 'Titillium Web';}
 .box-mini .redTwit {
     text-decoration: none;
     display: block;
@@ -321,10 +320,7 @@ section div.box-mini {
     background: url('../img/sprite-brushed.png') -50px -412px;
     margin: auto;
 }
-.box-mini .twit {
-    padding: 0 0 6rem;
-}
-
+.box-mini .twit {padding: 0 0 6rem;}
 /*-------------------------------------------------------MEDIA MAIN-----------------------------------------------
 --------------------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------------------*/
@@ -334,14 +330,12 @@ section div.box-mini {
         padding-left: 0;
         display: block;
     }
-	 img:hover {
+	 div.own-margin article.item img:hover {
 		 width:100%;
 		 height:100%;
-		background-color: #de5e60;
         transform: rotate3d(0,1,0,360deg);
          cursor: pointer;
          transition: all .5s ease;
-         z-index: 998;
 	}
     .purchape, .submit {
         height: 50px;
